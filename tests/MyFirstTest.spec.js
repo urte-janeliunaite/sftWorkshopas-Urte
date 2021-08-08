@@ -29,7 +29,6 @@ test('Test that search is working', async () => {
   expect(result1TextContent).toContain('Test')
 });
 
-
 test('Test that search is working recorded by inspector', async () => {
   await page.fill('input[name="q"]', 'Test');
   // Click input[name="q"]
@@ -78,7 +77,8 @@ test('Test that search is working recorded by inspector', async () => {
       
       expect(generatedPassword.length).toEqual(+passwordLength)
     });
-  });
+  }); 
+  
 
   const invalidPasswordLengths = ['7', '65'];
   invalidPasswordLengths.forEach(passwordLength => {
