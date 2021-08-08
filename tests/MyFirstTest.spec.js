@@ -78,7 +78,6 @@ test('Test that search is working recorded by inspector', async () => {
       expect(generatedPassword.length).toEqual(+passwordLength)
     });
   }); 
-  
 
   const invalidPasswordLengths = ['7', '65'];
   invalidPasswordLengths.forEach(passwordLength => {
