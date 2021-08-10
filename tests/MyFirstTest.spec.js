@@ -70,7 +70,7 @@ test('Test that search is working recorded by inspector', async () => {
 
   const passwordsLengths = ['8', '16', '64'];
   passwordsLengths.forEach(passwordLength => {
-    test.only(`Generate ${passwordLength} chracters long password`, async () => {
+    test(`Generate ${passwordLength} chracters long password`, async () => {
       await startPage.initiateSearch("password " + passwordLength);
       const generatedPassword = await resultsPage.getGeneratedPassword();
       console.log(generatedPassword);
